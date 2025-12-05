@@ -18,6 +18,25 @@ import folium
 from streamlit_folium import st_folium
 import streamlit.components.v1 as components
 
+import time
+import streamlit as st
+
+st.markdown("""
+    <style>
+    /* Cambiar color de la barra */
+    .stProgress > div > div > div > div {
+        background-color: #064d2f !important; /* Verde oscuro elegante */
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# --- BARRA DE CARGA ---
+with st.spinner("Cargando Vuela Lejos... ✈️"):
+    progress = st.progress(0)
+    for i in range(100):
+        time.sleep(0.01)
+        progress.progress(i + 1)
+
 
 # ---------------------------
 # Configuración de la página
