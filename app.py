@@ -578,3 +578,11 @@ st.markdown("""
     Vuela Lejos · 2025
 </div>
 """, unsafe_allow_html=True)
+
+st.markdown("""
+<style>
+#MainMenu {visibility: hidden;}      
+header {visibility: hidden;}         
+footer {visibility: hidden;}         
+</style>
+""", unsafe_allow_html=True)
