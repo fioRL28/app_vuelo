@@ -1,0 +1,11 @@
+streamlit
+pandas
+requests
+scikit-learn
+joblib
+reportlab
+Pillow
+plotly
+folium
+streamlit-folium
+pycountry
